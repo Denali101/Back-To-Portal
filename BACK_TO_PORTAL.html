@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Back To Portal</title>
+        <meta name="Denali" content="Back To Portal"/>
+        <meta name="Game" content="Back to Portal"/>
+        <meta charset="UTF-8"/>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Itim&family=Poppins:wght@500&display=swap" rel="stylesheet">
+        <script src="BACK_TO_PORTAL.js"></script>
+
+        <style>
+            body {
+                font-family: 'Itim', cursive;
+                background-image: url('scroll.jpg');
+            }
+            .hi {
+                font-size: large;
+            }
+            .invisTxt { /* Makes the borders of the textbox invisible */
+                width: 10rem;
+                outline: none;
+                border: none;
+                font-family: 'Itim', cursive;
+                font-size: 1em;
+                opacity: 50%;
+                color: black;
+            }
+            .invisBtn { /* Makes the button invisible and does not obstruct anything */
+                display:none;
+                visibility: hidden;
+            }
+            .monologue { /* The div that all the text gets outputted to */
+                margin: auto;
+                padding: 10px;
+                width: 50%;
+                text-align: center;
+                font-size: larger;
+            }
+        </style>
+    </head>
+    <body>
+        <button id="btn" class="invisBtn" onclick="select_output()"></button> <!--Invisible button-->
+        <div id="beginning" class="ok">
+            <p id="hello" class="hi">Hello there,</p>
+            <p id="box">><input type="text" id="textBox" name="textBox" class="invisTxt" autocomplete="off"></p> <!--Textbox-->
+        </div>
+        <div id="output" class="monologue"> <!--Outputted text goes here-->
+        </div>
+        <audio src="BOOM.wav" id="boom"></audio> <!--Audio files-->
+        <audio src="SLAM.wav" id="slam"></audio>
+        <audio src="RUMBLE.wav" id="rumble"></audio>
+    </body>
+
+</html>

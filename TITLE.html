@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Title</title> <!--This is the title page where the player will access the game or instructions-->
+        <meta name="Denali" content="Back To Portal"/>
+        <meta name="Game" content="Back to Portal"/>
+        <meta charset="UTF-8"/>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Itim&family=Poppins:wght@500&display=swap" rel="stylesheet">
+        <script src="TITLE.js"></script>
+
+        <style>
+            body {
+                font-family: 'Itim', cursive;
+                background-image: url(portal_title.jpg);
+            }
+            .title {
+                text-align: center;
+                margin-top: 6rem;
+                font-size: xx-large;
+                color: white;
+            }
+            .options {
+                text-align: center;
+                margin: auto;
+                width: 50%;
+                margin-top: 4rem;
+            }
+            .ins {
+                text-align: center;
+                margin: auto;
+                width: 50%;
+                margin-top: 2rem;
+            }
+            .play {
+                color: black;
+                background:rgb(130, 130, 229);
+                text-align: center;
+                font-size: x-large;
+                font-family: 'Itim', cursive;
+                border: 3px, solid, black;
+                border-radius: 15px;
+                padding: 10px;
+            }
+            .play:hover {
+                background: rgb(78, 78, 226);
+            }
+            .instructions {
+                color: black;
+                background:rgb(229, 198, 130);
+                text-align: center;
+                font-size: x-large;
+                font-family: 'Itim', cursive;
+                border: 3px, solid, black;
+                border-radius: 15px;
+                padding: 10px;
+            }
+            .instructions:hover {
+                background: rgb(207, 143, 5);
+            }
+        </style>
+        </head>
+        <body>
+            <div class="title">
+                <h1><b>Back to Portal</b></h1>
+            </div>
+            <div class="options">
+                <button onmouseover="begin()" onclick="play_game()" class="play" id="start">Play Game</button>
+            </div>
+            <div class="ins">
+                <button onmouseover="instruc()" onclick="instructions()" class="instructions" id="yellowInstruc">Instructions</button>
+            </div>
+        </body>
